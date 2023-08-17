@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			html,
+			body{
+				height: 100%;
+				width: 100%;
+				background-color: #f8faf7;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				font-family: 宋体;
+				color: #3F573E;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			
+			div{
+				display: flex;
+			}
+			
+			button{
+				border: none;
+				outline: none;
+			}
+			main{
+				height: 80%;
+				width: 80%;
+				border: 2px #41AE3C solid;
+				background-color: white;
+				border-radius: 20px;
+				padding: 20px;
+				font-size:2.5vh;
+				overflow-y: auto;
+			}
+			header{
+				height: 8%;
+				width: 100%;
+			/* 	border: 1px blue solid; */
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				position: relative;
+				/* border-bottom: 1.5px #41AE3C solid; */
+			}
+			
+			header>img{
+				height: 40%;
+				width: auto;
+				margin-left: 20px;
+				padding-bottom: 10px;
+			}
+			
+			header>span{
+				font-size: 2.8vh;
+				margin-left: 20px;
+			}
+			
+			#logoBox{
+				height: 45%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			#logoBox>img{
+				height: 60%;
+				width: auto;
+			}
+			
+			#pBox{
+				height: 10%;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				font-size: 3vh;
+			}
+			
+			#bottonBox{
+				height: 15%;
+				width: 100%;
+				position: relative;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			
+			#updataButton{
+				height: 50%;
+				width: 40%;
+				font-size: 3.5vh;
+				color: white;
+				font-family: "sourcesongb";
+				background-color: #41AE3C;
+				border-radius: 20px;
+			}
+		</style>
+		<link rel="stylesheet" href="./fonts/fonts.css">
+		<title>update</title>
+	</head>
+	<body>
+		<header>
+			<img src="./sucai/back.svg" alt="svg" id="backIcon"  onclick="window.location.href = './index.html'">
+			<span>检查更新</span>
+		</header>
+		<div id="logoBox">
+			<img src="./sucai/logo.png" alt="img/png">
+		</div>
+		<div id="pBox">
+			当前已经是最新版本了
+		</div>
+		<div id="bottonBox">
+			
+		</div>
+		<script src="./js/update.js"></script>
+	</body>
+</html>

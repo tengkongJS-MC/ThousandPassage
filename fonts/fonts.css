@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "sourcesong";
+	src: url("./source.otf");
+}
+
+@font-face {
+	font-family: "sourcesongb";
+	src: url("./sourcebold.otf");
+}
+
+*{
+	font-family: sourcesong;
+}

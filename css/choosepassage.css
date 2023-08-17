@@ -1,0 +1,116 @@
+html,
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #f8faf7;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 宋体;
+	color: #3F573E;
+}
+
+div{
+	display: flex;
+}
+
+button{
+	border: none;
+	outline: none;
+}
+
+
+/* 头部 */
+header{
+	height: 10%;
+/* 	border: 1px blue solid; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	position: relative;
+	/* border-bottom: 1.5px #41AE3C solid; */
+}
+
+header>img{
+	height: 40%;
+	width: auto;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+header>span{
+	font-size: 3vh;
+	margin-left: 20px;
+	transform: translate(0,-25%);
+}
+
+/* 主页面 */
+main{
+	height: 83%;
+	width: 100%;
+/* 	border: 1px red solid; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
+}
+
+.poetryCard{
+	flex-shrink: 0;
+	background-color: #F8FFF3;
+	height: 250px;
+	width: 90%;
+	border:3px #41AE3C solid;
+	border-radius: 20px;
+	margin-top: 40px;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 4px 7px -1px rgba(20, 55, 19, 0.16);
+}
+
+#cardLeft{
+	height: 100%;
+	width: auto;
+	align-items: center;
+	max-width: 75%;
+}
+
+.poetryNumber{
+	height: auto;
+	width: auto;
+	font-size: 5vh;
+	margin-left: 40px;
+	color: #41AE3C;
+	font-weight: bold;
+}
+
+.poetryName{
+	font-size: 3vh;
+	margin-left: 40px;
+}
+
+.startRead{
+	height: auto;
+	font-size: 2.5vh;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+	border:2px #41AE3C solid;
+	background-color: rgba(0, 0, 0, 0);
+	margin-right: 40px;
+}
+
+.startRead:hover{
+	animation: cardButtChange .05s forwards;
+}
+
+@keyframes cardButtChange {
+	to{
+		background-color: #41AE3C;
+		color:white;
+		transform: scale(1.1);
+		box-shadow: 0px 4px 10px 0px rgba(46, 122, 42, 0.3);
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,91 @@
+html,
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #f8faf7;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 宋体;
+	color: #3F573E;
+}
+
+div{
+	display: flex;
+}
+
+button{
+	border: none;
+	outline: none;
+}
+
+
+/* 头部 */
+header{
+	height: 10%;
+/* 	border: 1px blue solid; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	position: relative;
+	/* border-bottom: 1.5px #41AE3C solid; */
+}
+
+header>img{
+	height: 40%;
+	width: auto;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+header>span{
+	font-size: 3vh;
+	margin-left: 20px;
+	transform: translate(0,-15%);
+}
+
+/* 主界面 */
+#main{
+	height: 90%;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+#main>span{
+	width: 100%;
+	font-size: 2.5vh;
+	text-align: center;
+	background-color: #8dc78a;
+	color:white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#passageCard{
+	height: 72%;
+	width: 85%;
+	border: 1px #41ae3c solid;
+	margin-top: 3vh;
+	border-radius: 20px;
+	content-editable: true;
+	font-size: 2.5vh;
+	padding: 10px;
+}
+
+#startMemory{
+	width: 88%;
+	height: 8%;
+	margin-top: 2vh;
+	border-radius: 20px;
+	background-color: #41ae3c;
+	color: white;
+	font-size: 3vh;
+	font-weight: bold;
+}
+
+#passageCard:focus{
+	outline: none;
+	background: #F8FFF3;
+	box-shadow: 0px 4px 7px -1px rgba(20, 55, 19, 0.16);
+}
