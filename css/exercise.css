@@ -41,7 +41,6 @@ button{
 	position: absolute;
 	top:0px;
 	left:0px;
-	border: 1px blue solid;
 	align-items: center;
 	justify-content: space-around;
 }

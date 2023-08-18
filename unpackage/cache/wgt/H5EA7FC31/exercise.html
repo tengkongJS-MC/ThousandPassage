@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>exercise</title>
+		<link rel="stylesheet" href="./fonts/fonts.css">
+		<link rel="stylesheet" href="./css/exercise.css">
+	</head>
+	<body>
+		
+		<div id="mainText">
+			点我开始
+		</div>
+		
+		<!-- 左上角的按钮们 -->
+		<div id="buttonBox">
+			<img src="./sucai/back.svg" alt="img/svg" onclick="window.location.href = './index.html'">
+			<img src="./sucai/moretwo.svg" alt="img/svg" style="transform: scale(.9);" onclick="openSidebar('settingExerciseSidebar')">
+		</div>
+		
+		<!-- 练习设置 -->
+		<div class = "sidebar" id="settingExerciseSidebar">
+			<img src="./sucai/cha.svg" alt="img/svg" class="close" onclick="closeSidebar('settingExerciseSidebar')">
+			<div class="sidebarHeader">
+				练习设置
+			</div>
+			<div id = "SESCardBox">
+				<div class="SESCard"  onclick="openSidebar('choosePassageCard')">
+					<span>选择文章</span>
+					<img src="./sucai/choosepassage.svg" alt="img/svg" class="SESCardImg">
+				</div>
+				<div class="SESCard" onclick="openSidebar('inputPassageCard')">
+					<span>输入文章</span>
+					<img src="./sucai/inputpassage.svg" alt="img/svg" class="SESCardImg">
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 选择文章卡片 -->
+		<div class="sidebar" id="choosePassageCard">
+			<img src="./sucai/cha.svg" alt="img/svg" class="close" onclick="closeSidebar('choosePassageCard')">
+			<div class="sidebarHeader">
+				选择文章
+			</div>
+			<div id="CPCMain">
+				
+			</div>
+		</div>
+		
+		<!-- 文章输入卡片-->
+		<div class="sidebar" id = "inputPassageCard">
+			<img src="./sucai/cha.svg" alt="img/svg" class="close" onclick="closeSidebar('inputPassageCard')">
+			<div class="sidebarHeader">
+				输入文章
+			</div>
+			<div id="IPCMain" contenteditable="true">
+				
+			</div>
+			<div id="IPCButtonBox">
+				<button class="IPCButton" style="margin-left: 20px;" onclick="inputPassages(),closeAllSidebar()">
+					确认
+				</button>
+				<button class="IPCButton" id = "noInput" style="margin-right: 20px;" onclick="closeSidebar('inputPassageCard')">
+					取消
+				</button>
+			</div>
+		</div>
+		
+		<script src="./js/passages.js"></script>
+		<script src="./js/exercise.js"></script>
+	</body>
+</html>

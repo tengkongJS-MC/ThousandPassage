@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/memory.css">
+		<link rel="stylesheet" href="./fonts/fonts.css">
+		<title>背诵</title>
+	</head>
+	<body>
+		
+		<!-- 头部 -->
+		<header>
+			<img src="./sucai/back.svg" alt="svg" id="backIcon"  onclick="window.location.href = './choosepassage.html'">
+			<span>正在背诵中</span>
+		</header>
+		
+		<!-- 进度框 -->
+		<div id="schedule">
+			<div class="scheShow" id="sche1">
+				阅读
+			</div>
+			<div class="scheShow" id="sche2">
+				25 %
+			</div>
+			<div class="scheShow" id="sche3">
+				50 %
+			</div>
+			<div class="scheShow" id="sche4">
+				85 %
+			</div>
+		</div>
+		
+		<!-- 文章显示 -->
+		<div id="mainPassage">
+			<div id="passageCard">
+				
+			</div>
+		</div>
+		
+		<!-- 底部按钮 -->
+		<div id="buttonBox">
+			<button class="funcButt" id="funcButt1" onclick="noFinished()">
+				上一阶段
+			</button>
+			<button class="funcButt" id="funcButt2" onclick="IFinished()">
+				我已完成
+			</button>
+		</div>
+		
+		<!-- 模态框 -->
+		
+		<div id="modal">
+			<div id="modalTop">
+				
+			</div>
+			<div id="modalBottom">
+				<button onclick="window.location.href = './index.html'">
+					返回
+				</button>
+				<button onclick="closeModal()">
+					取消
+				</button>
+			</div>
+		</div>
+		
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/passages.js"></script>
+<!-- 		<script src="./js/passagechoose.js"></script> -->
+		<script src="./js/memory.js"></script>
+	</body>
+</html>
